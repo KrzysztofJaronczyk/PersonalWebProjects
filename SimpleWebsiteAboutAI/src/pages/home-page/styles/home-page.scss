@@ -1,0 +1,82 @@
+.wrapper {
+	position: absolute;
+	display: flex;
+	height: auto;
+	padding: 220px 10%;
+	// background-color: darkblue;
+	overflow: hidden;
+}
+
+.text-container {
+	top: 0;
+	position: relative;
+	width: 100%;
+}
+
+.cards-container {
+	display: flex;
+	margin: 0 5rem;
+	margin-top: 2em;
+	flex-wrap: wrap;
+	height: fit-content;
+	gap: 30px;
+	flex: 0 0 40%;
+	align-items: center;
+	justify-content: center;
+	// background-color: green;
+}
+
+.card {
+	position: relative;
+	width: 260px;
+	height: 220px;
+	padding: 20px 20px;
+	background-color: var(--color-primary-dark);
+	border-radius: 24px;
+
+	&__img {
+		position: relative;
+		width: 70px;
+		height: 70px;
+		left: 50%;
+		top: 5%;
+		transform: translateX(-50%);
+		border-radius: 16px;
+
+		&-pink {
+			background-color: rgba(255, 0, 255, 0.1);
+		}
+
+		&-violet {
+			background-color: rgba(238, 130, 238, 0.1);
+		}
+
+		&-aqua {
+			background-color: rgba(0, 255, 255, 0.1);
+		}
+
+		&-yellow {
+			background-color: rgba(255, 255, 0, 0.1);
+		}
+	}
+
+	img {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%) scale(0.6);
+	}
+
+	&__title {
+		margin-top: 2rem;
+		position: relative;
+		text-align: center;
+	}
+
+	&__description {
+		position: relative;
+		text-align: center;
+		color: var(--color-secondary-light);
+		opacity: 0.5;
+	}
+}
