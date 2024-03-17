@@ -1,0 +1,74 @@
+.background-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: -1;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: fill;
+
+		background-position: center;
+	}
+}
+
+.shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.wrapper {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 10rem;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+	width: fit-content;
+	white-space: nowrap; /* Zapobiega zawijaniu tekstu */
+}
+.left {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 460px;
+}
+
+.right {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 460px;
+}
+
+.circle {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+
+    h4{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 32px;
+        color: var(--text-color);
+    }
+}
