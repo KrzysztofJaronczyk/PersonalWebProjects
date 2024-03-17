@@ -41,6 +41,7 @@
 		margin-right: -50px;
 		z-index: 100;
 		height: 1px;
+		opacity: 0.5;
 		background-color: var(--dark-text-color);
 	}
 	.nav-list {
@@ -56,8 +57,45 @@
 			margin: 0 30px;
 			min-width: 130px;
 			text-align: center;
-			padding: 30px 20px;
+			height: 100%;
+			padding: 20px 20px;
+			justify-content: center;
+			align-items: center;
+			display: flex;
 			cursor: pointer;
+			position: relative;
+
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+				width: 0;
+				bottom: 0;
+				border-bottom: 3px solid var(--dark-text-color);
+				opacity: 0.5;
+				transition: width 0.5s ease; /* Added transition */
+			}
+
+			&::before {
+				right: 50%;
+			}
+
+			&::after {
+				left: 50%;
+			}
+
+			&:hover::before,
+			&:hover::after {
+				width: 50%;
+			}
+
+			&--active::after,
+			&--active::before {
+				width: 50%;
+				border-bottom: 3px solid var(--text-color);
+				opacity: 1;
+			}
+
 			.nav-link {
 				text-decoration: none;
 				text-transform: uppercase;
