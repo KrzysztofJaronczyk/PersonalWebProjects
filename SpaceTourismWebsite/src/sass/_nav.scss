@@ -64,6 +64,7 @@
 			display: flex;
 			cursor: pointer;
 			position: relative;
+			text-decoration: none;
 
 			&::before,
 			&::after {
@@ -110,6 +111,139 @@
 					font-weight: bold;
 				}
 			}
+		}
+	}
+}
+
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+
+
+.hamburger {
+	padding: 15px 15px;
+	position: relative;
+	right: 10px;
+	display: none;
+	cursor: pointer;
+	transition-property: opacity, filter;
+	transition-duration: 0.15s;
+	transition-timing-function: linear;
+	font: inherit;
+	color: inherit;
+	text-transform: none;
+	background-color: transparent;
+	border: 0;
+	margin: 0;
+	overflow: visible;
+}
+.hamburger:hover {
+	opacity: 0.7;
+}
+.hamburger.is-active:hover {
+	opacity: 0.7;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+	background-color: var(--text-color);
+}
+
+.hamburger-box {
+	width: 40px;
+	height: 24px;
+	display: inline-block;
+	position: relative;
+}
+
+.hamburger-inner {
+	display: block;
+	top: 50%;
+	margin-top: -2px;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+	width: 40px;
+	height: 4px;
+	background-color: var(--text-color);
+	border-radius: 4px;
+	position: absolute;
+	transition-property: transform;
+	transition-duration: 0.15s;
+	transition-timing-function: ease;
+}
+.hamburger-inner::before,
+.hamburger-inner::after {
+	content: '';
+	display: block;
+}
+.hamburger-inner::before {
+	top: -10px;
+}
+.hamburger-inner::after {
+	bottom: -10px;
+}
+
+.hamburger--arrow.is-active .hamburger-inner::before {
+	transform: translate3d(-8px, 0, 0) rotate(-45deg) scale(0.7, 1);
+}
+
+.hamburger--arrow.is-active .hamburger-inner::after {
+	transform: translate3d(-8px, 0, 0) rotate(45deg) scale(0.7, 1);
+}
+
+
+
+@media (max-width: 768px) {
+	.nav {
+		top: 20px;
+		padding-left: 0;
+
+		.logoContainer {
+			left: 10px;
+		}
+		.logo {
+			width: 50px;
+			height: 50px;
+		}
+		.line {
+			display: none;
+		}
+		.nav-list {
+			display: flex;
+			width: 65%;
+			padding: 0 20px;
+			.nav-item {
+				margin: 0;
+
+				min-width: 80px;
+				padding: 15px 15px;
+				
+				.nav-link {
+					span {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.nav {
+		top: 10px;
+
+		.nav-list {
+			display: none;
+		}
+
+		.hamburger {
+			display: block;
 		}
 	}
 }
