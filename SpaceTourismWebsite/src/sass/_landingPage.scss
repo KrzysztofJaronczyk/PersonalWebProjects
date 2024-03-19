@@ -1,3 +1,12 @@
+.shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.1);
+}
+
 .background-img {
 	position: absolute;
 	top: 0;
@@ -15,16 +24,6 @@
 		background-position: center;
 	}
 }
-
-.shadow {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.1);
-}
-
 .wrapper {
 	position: absolute;
 	top: 50%;
@@ -36,7 +35,7 @@
 .container {
 	display: flex;
 	justify-content: space-between;
-	align-items: end;
+	align-items: flex-end;
 }
 
 .left {
@@ -70,4 +69,13 @@
 		font-size: 32px;
 		color: var(--primary-color);
 	}
+}
+
+@media (max-width: 768px) {
+	.background-img {
+        transform-origin: top left;
+        transform: rotate(90deg) translateY(-100%);
+        width: 100vh;
+        height: 100vw;
+    }
 }
