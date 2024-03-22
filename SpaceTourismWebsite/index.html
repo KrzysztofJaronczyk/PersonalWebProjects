@@ -26,16 +26,16 @@
    </div>
    <div class="line"></div>
    <ul class="nav-list">
-      <a href="#home" class="nav-item nav-item--active">
+      <a href="#home" class="nav-item nav-item--active" data-id="home">
          <li class="nav-link"><span>00</span> Home</li>
       </a>
-      <a href="#about" class="nav-item">
+      <a href="#about" class="nav-item" data-id="destination">
          <li class="nav-link"><span>01</span> Destination</li>
       </a>
-      <a href="#destinations" class="nav-item">
+      <a href="#destinations" class="nav-item" data-id="crew">
          <li class="nav-link"><span>02</span> Crew</li>
       </a>
-      <a href="#contact" class="nav-item">
+      <a href="#contact" class="nav-item" data-id="technology">
          <li class="nav-link"><span>03</span> Technology</li>
       </a>
    </ul>
@@ -45,32 +45,51 @@
       </span>
    </button>
 </nav>
-    <div class="shadow">
-        <div class="background-img">
-            <img src="/dist/img/mainBackground.webp" alt="Earth">
-        </div>
-    </div>
-
-    <div class="wrapper">
-        <div class="container">
-            <div class="left">
-                <h5 class="subtitle subtitle--h5">SO, YOU WANT TO TRAVEL TO</h5>
-                <h1 class="title">SPACE</h1>
-                <p class="text">Let’s face it; if you want to go to space, you might as well genuinely go to outer
-                    space and not
-                    hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this
-                    world experience!</p>
+    <main id="home" class="section section--active">
+        <div class="shadow">
+            <div class="background-img">
+                <img src="/dist/img/mainBackground.webp" alt="Earth">
             </div>
-            <div class="right">
-                <div class="circle">
-                    <h4 class="subtitle subtitle--h4">EXPLORE</h4>
+        </div>
+        <div class="wrapper">
+            <div class="container">
+                <div class="left">
+                    <h5 class="subtitle subtitle--h5">SO, YOU WANT TO TRAVEL TO</h5>
+                    <h1 class="title">SPACE</h1>
+                    <p class="text">Let’s face it; if you want to go to space, you might as well genuinely go to outer
+                        space and not
+                        hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of
+                        this world experience!</p>
+                </div>
+                <div class="right">
+                    <div class="circle">
+                        <h4 class="subtitle subtitle--h4">EXPLORE</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <section id="destination" class="section">
+        <div class="wrapper">
+            <div class="container">
+                <div class="left">
+                    <h5 class="subtitle subtitle--h5">OUR MISSION</h5>
+                    <h1 class="title">TO INFINITY AND BEYOND</h1>
+                    <p class="text">We are committed to providing you with the best experience possible. Our tours are
+                        designed to take you to places you’ve never been before, including the far reaches of space. We
+                        are dedicated to making your trip as comfortable and enjoyable as possible, so you can relax and
+                        enjoy the ride.</p>
+                </div>
+                <div class="right">
+                    <div class="circle">
+                        <h4 class="subtitle subtitle--h4">MISSION</h4>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
+    </section>
     <script src="/dist/js/navbar.min.js"></script>
-    <script src="/dist/js/hamburgermenu.min.js"></script>
 
 </body>
 

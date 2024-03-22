@@ -1,6 +1,7 @@
 const navItems = document.querySelectorAll('.nav-item')
 const hamburgerMenu = document.querySelector('.hamburger')
 const navBar = document.querySelector('.nav-list')
+const allSections = document.querySelectorAll('.section')
 
 navItems.forEach(item => {
 	item.addEventListener('click', () => {
@@ -9,11 +10,18 @@ navItems.forEach(item => {
 			toggleHamburger(false)
 		})
 		item.classList.add('nav-item--active')
-		navBar.classList.remove('nav-list--active')
+		//get item id
+		const id = item.getAttribute('data-id')
+		// console.log(id)
+		//show section with the same id
+		allSections.forEach(section => {
+			section.classList.remove('section--active')
+			if (section.getAttribute('id') === id) {
+				section.classList.add('section--active')
+			}
+		})	
 	})
 })
-
-hamburgerMenu.addEventListener('click', toggleHamburger)
 
 function toggleHamburger(bool = true) {
 	if (bool === false) {
@@ -33,4 +41,7 @@ function closeNav(e) {
 	}
 }
 
+
+
 document.addEventListener('click', closeNav)
+hamburgerMenu.addEventListener('click', toggleHamburger)

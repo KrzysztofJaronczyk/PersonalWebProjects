@@ -17,6 +17,21 @@ body {
 	color: var(--text-color);
 }
 
+.section{
+	position: absolute;
+	left: -100%;
+	top: 0;
+	height: 100%;
+	width: 100vw;
+	min-height: 900px;
+	transition: left 0.5s ease;
+
+	&--active{
+		left: 0;
+		// display: contents;
+	}
+}
+
 .title {
 	font-family: 'Bellefair', serif;
 	font-weight: 400;
