@@ -17,7 +17,11 @@ body {
 	color: var(--text-color);
 }
 
-.section{
+.dark {
+	color: var(--dark-text-color) !important;
+}
+
+.section {
 	position: absolute;
 	left: -120%;
 	top: 0;
@@ -25,7 +29,7 @@ body {
 	width: 100%;
 	transition: left 0.5s ease;
 
-	&--active{
+	&--active {
 		left: 0;
 		// display: contents;
 	}
@@ -61,7 +65,12 @@ body {
 		font-size: 28px;
 		letter-spacing: 4.75px;
 		font-weight: normal !important;
-		color: var(--dark-text-color) !important;
+
+		span {
+			margin-right: 1rem;
+			font-weight: bold;
+			opacity: 0.25;
+		}
 	}
 }
 

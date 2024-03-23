@@ -22,7 +22,7 @@ const paths = {
 	sassDest: './dist/css',
 	js: './src/js/**/*.js',
 	jsDest: './dist/js',
-	img: './src/img/*',
+	img: './src/img/**/*',
 	imgDest: './dist/img',
 	dist: './dist',
 }

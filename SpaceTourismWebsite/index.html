@@ -45,7 +45,7 @@
       </span>
    </button>
 </nav>
-    <main id="home" class="section section--active">
+    <main id="home" class="section ">
         <div class="shadow">
             <div class="background-img">
                 <img src="/dist/img/mainBackground.webp" alt="Earth">
@@ -54,7 +54,7 @@
         <div class="wrapper">
             <div class="container">
                 <div class="left">
-                    <h5 class="subtitle subtitle--h5">SO, YOU WANT TO TRAVEL TO</h5>
+                    <h5 class="subtitle subtitle--h5 subtitle--h5 dark">SO, YOU WANT TO TRAVEL TO</h5>
                     <h1 class="title">SPACE</h1>
                     <p class="text">Let’s face it; if you want to go to space, you might as well genuinely go to outer
                         space and not
@@ -70,21 +70,42 @@
             </div>
         </div>
     </main>
-    <section id="destination" class="section">
+    <section id="destination" class="section section--active">
+        <div class="shadow">
+            <div class="background-img">
+                <img src="/dist/img/planets/DestinationBg.webp" alt="Earth">
+            </div>
+        </div>
         <div class="wrapper">
             <div class="container">
                 <div class="left">
-                    <h5 class="subtitle subtitle--h5">OUR MISSION</h5>
-                    <h1 class="title">TO INFINITY AND BEYOND</h1>
-                    <p class="text">We are committed to providing you with the best experience possible. Our tours are
-                        designed to take you to places you’ve never been before, including the far reaches of space. We
-                        are dedicated to making your trip as comfortable and enjoyable as possible, so you can relax and
-                        enjoy the ride.</p>
+                    <h5 class="subtitle subtitle--h5"><span>01</span> PICK YOUR DESTINATION</h5>
+                    <img src="/dist/img/planets/moon.webp" alt="moonImage" class="planet">
                 </div>
                 <div class="right">
-                    <div class="circle">
-                        <h4 class="subtitle subtitle--h4">MISSION</h4>
-                    </div>
+                    <ul class="nav-list">
+                        <a href="#home" class="nav-item nav-item--active" data-id="home">
+                            <li class="nav-link">Home</li>
+                        </a>
+                        <a href="#about" class="nav-item" data-id="destination">
+                            <li class="nav-link">Destination</li>
+                        </a>
+                        <a href="#destinations" class="nav-item" data-id="crew">
+                            <li class="nav-link">Crew</li>
+                        </a>
+                        <a href="#contact" class="nav-item" data-id="technology">
+                            <li class="nav-link">Technology</li>
+                        </a>
+                    </ul>
+                    <h2 class="subtitle subtitle--h2">MOON</h2>
+                    <p class="text">See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+                        regain perspective and come back refreshed. While you’re there, take in some history by visiting
+                        the Luna 2 and Apollo 11 landing sites.</p>
+                    <div class="line"></div>
+                    <div class="subheading subheading--small dark">AVG. DISTANCE</div>
+                    <div class="mainSubheading">384,400 km</div>
+                    <div class="subheading subheading--small dark">Est. travel time</div>
+                    <div class="mainSubheading">3 days</div>
                 </div>
             </div>
         </div>
