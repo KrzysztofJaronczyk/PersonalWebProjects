@@ -1,5 +1,7 @@
 @use 'nav';
 @use 'landingPage';
+@use 'destination';
+
 :root {
 	--primary-color: #0b0d17;
 	--text-color: #ffffff;
@@ -23,11 +25,11 @@ body {
 
 .section {
 	position: absolute;
-	left: -120%;
+	left: -200%;
 	top: 0;
 	height: 100%;
 	width: 100%;
-	transition: left 0.5s ease;
+	transition: left 0.7s ease;
 
 	&--active {
 		left: 0;

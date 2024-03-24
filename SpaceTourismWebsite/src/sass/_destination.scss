@@ -1,0 +1,87 @@
+.planet {
+	position: relative;
+	left: 20%;
+	margin-top: 20%;
+}
+
+.right-destination {
+	position: relative;
+	padding: auto;
+	margin-left: 15%;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: start;
+	display: flex;
+	flex-direction: column;
+}
+
+.planets-slider-menu {
+	position: relative;
+	margin-top: 10%;
+	height: 60px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0;
+	.nav-list {
+		padding: 0;
+		width: 100%;
+		margin-bottom: 3rem;
+		.nav-item {
+			margin-left: 0;
+		}
+	}
+}
+
+.subheadingsContainer {
+	position: relative;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.one,
+.two {
+	text-transform: uppercase;
+	line-height: 36px;
+}
+
+@media (max-width: 992px) {
+	.planet {
+		left: 0;
+		width: 350px;
+	}
+	.right-destination {
+		margin-left: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.topleft {
+		position: absolute;
+		left: 8%;
+		top: -3%;
+	}
+
+	.right-destination {
+		margin-left: 0;
+		width: 100%;
+		align-items: center;
+        padding: 0 10%;
+		.nav-list {
+			justify-content: center !important;
+		}
+		.text {
+			text-align: center;
+		}
+	}
+
+	.subheadingsContainer {
+		flex-direction: column;
+	}
+	.one,
+	.two {
+		text-align: center;
+	}
+}
