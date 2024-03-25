@@ -8,6 +8,7 @@
 	position: relative;
 	padding: auto;
 	margin-left: 15%;
+	margin-bottom: 2rem;
 	width: 50%;
 	height: 100%;
 	display: flex;
@@ -68,7 +69,7 @@
 		margin-left: 0;
 		width: 100%;
 		align-items: center;
-        padding: 0 10%;
+		padding: 0 10%;
 		.nav-list {
 			justify-content: center !important;
 		}
@@ -77,11 +78,63 @@
 		}
 	}
 
+	.planet {
+		margin-top: 10%;
+	}
+
 	.subheadingsContainer {
 		flex-direction: column;
 	}
 	.one,
 	.two {
 		text-align: center;
+	}
+
+	.wrapper--top{
+		top: 25%;
+	}
+}
+
+@media (max-width: 576px) {
+	.planet {
+		width: 200px;
+	}
+
+	.right-destination {
+		.nav-list--start {
+			.nav-item {
+				height: 70%;
+
+				.nav-link {
+					font-size: 14px;
+				}
+			}
+		}
+
+		.subtitle--h2 {
+			font-size: 56px !important;
+		}
+		.text {
+			font-size: 15px;
+			line-height: 25px;
+		}
+
+		.line--maxwidth {
+			margin: 2rem 0;
+		}
+
+		.one,
+		.two {
+			margin-bottom: 2rem;
+		}
+	}
+	.topleft {
+		position: relative;
+		text-align: center;
+		left: 0;
+		margin: auto;
+	}
+	.wrapper--top{
+		top: 20%;
 	}
 }
