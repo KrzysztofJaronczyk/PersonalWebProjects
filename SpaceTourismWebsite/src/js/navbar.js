@@ -1,6 +1,6 @@
-const navItems = document.querySelectorAll('.nav-item')
 const hamburgerMenu = document.querySelector('.hamburger')
-const navBar = document.querySelector('.nav-list')
+const navBar = document.querySelector('#navbar')
+const navItems = navBar.querySelectorAll('.nav-item')
 const allSections = document.querySelectorAll('.section')
 
 navItems.forEach(item => {
@@ -19,7 +19,7 @@ navItems.forEach(item => {
 			if (section.getAttribute('id') === id) {
 				section.classList.add('section--active')
 			}
-		})	
+		})
 	})
 })
 
@@ -40,8 +40,6 @@ function closeNav(e) {
 		hamburgerMenu.classList.remove('is-active')
 	}
 }
-
-
 
 document.addEventListener('click', closeNav)
 hamburgerMenu.addEventListener('click', toggleHamburger)
