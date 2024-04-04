@@ -7,8 +7,15 @@ const destinationText = destinationTitle.nextElementSibling
 const distance = document.querySelector('.one .mainSubheading')
 const time = document.querySelector('.two .mainSubheading')
 
+let isAnimating = false
+
+
 sliderItems.forEach(item => {
 	item.addEventListener('click', () => {
+		if (isAnimating) {
+			return
+		}
+		isAnimating = true
 		sliderItems.forEach(item => {
 			item.classList.remove('nav-item--active')
 		})
@@ -17,6 +24,7 @@ sliderItems.forEach(item => {
 		let planet = item.getAttribute('data-id')
 
 		if (planet === destinationTitle.textContent.toLowerCase()) {
+			isAnimating = false
 			return
 		}
 
@@ -78,5 +86,6 @@ function fadeInAnimation() {
 		destinationText.classList.remove('activePlanet', 'active')
 		distance.classList.remove('activePlanet', 'active')
 		time.classList.remove('activePlanet', 'active')
+		isAnimating = false
 	}, 1000)
 }
