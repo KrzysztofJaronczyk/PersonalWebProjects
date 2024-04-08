@@ -1,6 +1,7 @@
 @use 'nav';
 @use 'landingPage';
 @use 'destination';
+@use 'crew';
 
 :root {
 	--primary-color: #0b0d17;
@@ -56,9 +57,12 @@ body {
 	}
 	&--h3 {
 		font-size: 56px;
+		text-transform: uppercase;
 	}
 	&--h4 {
 		font-size: 32px;
+		opacity: 0.5;
+		text-transform: uppercase;
 	}
 	&--h5 {
 		font-family: 'Barlow Condensed', sans-serif;

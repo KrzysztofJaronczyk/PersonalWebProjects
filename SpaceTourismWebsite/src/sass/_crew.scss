@@ -1,0 +1,165 @@
+.section-title {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.container--crew {
+	position: fixed;
+	bottom: 0;
+}
+.left {
+	&--crew {
+		width: 60%;
+		min-width: 500px;
+		align-self: flex-end;
+		margin-bottom: 5rem;
+	}
+}
+
+.text {
+	&--crew {
+		max-width: 480px;
+	}
+}
+
+.line--maxwidth{
+    &--crew{
+        display: none;
+    }
+
+}
+
+.right--crew {
+	align-items: center;
+	justify-content: flex-end;
+	height: 100%;
+}
+
+.subtitle--h3 {
+	margin: 1rem 0 1.5rem 0;
+}
+
+.dots-container {
+	position: relative;
+	margin-top: 10%;
+	display: flex;
+	justify-content: center;
+	padding: 0.5rem;
+
+	.dot {
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		background-color: var(--dark-text-color);
+		margin: 0 0.8rem;
+		opacity: 0.5;
+		transition: all 0.3s ease-in-out;
+		cursor: pointer;
+
+		&--active {
+			background-color: var(--text-color);
+			opacity: 1;
+		}
+	}
+	.dot::after {
+		content: '';
+		display: block;
+		width: 25px;
+		height: 25px;
+		transform: translate(-25%, -25%);
+		border-radius: 50%;
+		background-color: var(--text-color);
+		opacity: 0;
+	}
+
+	.dot:hover {
+		opacity: 1;
+	}
+}
+
+.crewImg {
+	position: relative;
+	height: 80%;
+	background-position: center;
+	overflow: hidden;
+}
+
+@media (max-width: 1840px) {
+	.right--crew {
+		align-items: flex-start;
+	}
+}
+
+@media (max-width: 1450px) {
+	.container--crew {
+		position: relative;
+		flex-direction: column;
+	}
+
+	.left--crew {
+		align-items: center;
+		align-self: center;
+
+		.text--crew {
+			margin-top: 2rem;
+			text-align: center;
+			width: 110%;
+			max-width: max-content;
+			margin: 0 20px;
+		}
+	}
+
+	.right--crew {
+		align-items: center;
+	}
+
+	.section-title {
+		margin-bottom: 3rem;
+	}
+}
+
+@media (max-width: 576px) {
+	.container--crew {
+		flex-direction: column-reverse;
+	}
+	.section-title {
+		text-align: center;
+	}
+	.right--crew {
+		margin-top: 0 !important;
+	}
+
+	.crewImg {
+		width: 300px;
+	}
+
+	.line--maxwidth {
+		&--crew {
+            display: block;
+			margin-top: 0;
+			opacity: 0.3;
+		}
+	}
+
+	.left--crew {
+		.dots-container {
+			order: -1;
+			margin-top: 0;
+			margin-bottom: 2rem;
+		}
+        .subtitle--h4{
+            font-size: 16px;
+        }
+		.subtitle--h3 {
+			font-size: 24px;
+		}
+        .text--crew{
+            font-size: 15px;
+            line-height: 25px;
+            width: 95%;
+        }
+        min-width: auto;
+	}
+}
