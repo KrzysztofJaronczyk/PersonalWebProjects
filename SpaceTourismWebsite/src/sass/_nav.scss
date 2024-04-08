@@ -63,6 +63,8 @@
 	justify-content: space-evenly;
 	&--start {
 		justify-content: flex-start !important;
+		backdrop-filter: none;
+
 		.nav-item {
 			// padding: 0 20px;
 			margin: 0 20px;

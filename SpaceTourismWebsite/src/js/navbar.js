@@ -3,6 +3,18 @@ const navBar = document.querySelector('#navbar')
 const navItems = navBar.querySelectorAll('.nav-item')
 const allSections = document.querySelectorAll('.section')
 
+function setBackgroundHeight() {
+	const activeSection = document.querySelector('.section--active')
+	const shadow = activeSection.querySelector('.shadow')
+	const wrapper = activeSection.querySelector('.wrapper')
+
+	const height = wrapper.clientHeight 
+
+	if (window.innerWidth < 768) {
+		shadow.style.height = `${height +150}px`
+	}
+}
+
 navItems.forEach(item => {
 	item.addEventListener('click', () => {
 		navItems.forEach(item => {
@@ -17,11 +29,14 @@ navItems.forEach(item => {
 		allSections.forEach(section => {
 			section.classList.remove('section--active')
 			if (section.getAttribute('id') === id) {
-				section.classList.add('section--active')
+				section.classList.add('section--active')	
+				setBackgroundHeight()
 			}
 		})
 	})
 })
+
+window.addEventListener('resize', setBackgroundHeight)
 
 function toggleHamburger(bool = true) {
 	if (bool === false) {

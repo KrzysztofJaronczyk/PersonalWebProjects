@@ -9,7 +9,6 @@ const time = document.querySelector('.two .mainSubheading')
 
 let isAnimating = false
 
-
 sliderItems.forEach(item => {
 	item.addEventListener('click', () => {
 		if (isAnimating) {
