@@ -110,23 +110,23 @@
 			opacity: 1;
 		}
 
-		.nav-link {
-			text-decoration: none;
-			text-transform: uppercase;
-			color: var(--text-color);
-			font-family: 'Barlow Condensed', sans-serif;
-			font-weight: 400;
-			font-style: normal;
-			font-size: 16px;
-			letter-spacing: 2.7px;
-
-			span {
-				font-weight: bold;
-			}
-		}
 	}
 }
 
+.nav-link {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: var(--text-color);
+	font-family: 'Barlow Condensed', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	letter-spacing: 2.7px;
+
+	span {
+		font-weight: bold;
+	}
+}
 .hamburger {
 	padding: 15px 15px;
 	position: relative;

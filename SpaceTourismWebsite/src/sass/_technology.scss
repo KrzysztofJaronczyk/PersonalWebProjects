@@ -1,0 +1,179 @@
+.nav-link {
+	&--technology {
+		color: var(--dark-text-color);
+	}
+}
+
+.wrapper {
+	&--technology {
+		padding-right: 0;
+	}
+}
+
+.slider-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	margin-top: 0;
+	margin-right: 5rem;
+	margin-top: 5rem;
+
+	.dot {
+		width: 80px;
+		height: 80px;
+		margin: 20px 0;
+		border: 1px solid rgba(208, 214, 249, 0.3);
+
+		transition: all 0.3s ease-in-out;
+		border-radius: 50%;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+
+		&:hover {
+			border: 1px solid var(--text-color);
+			opacity: 1;
+		}
+
+		&--active {
+			background-color: var(--text-color);
+			color: var(--primary-color);
+		}
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+.container {
+	&--technology {
+		margin-top: 2rem;
+	}
+}
+
+.left {
+	&--technology {
+		margin-top: 5rem;
+		width: auto;
+		max-width: 530px;
+		margin-right: 2rem;
+
+		.text {
+			width: 90%;
+		}
+	}
+}
+
+.right {
+	&--technology {
+		margin-right: 0;
+		height: 100%;
+		max-height: fit-content;
+
+		.rocketImg {
+			height: 100%;
+			width: auto;
+			background-size: cover;
+		}
+	}
+}
+
+@media (max-width: 1160px) {
+	.wrapper {
+		&--technology {
+			padding-left: 0;
+		}
+	}
+
+	.container {
+		&--technology {
+			flex-direction: column-reverse;
+			align-items: center;
+		}
+	}
+
+	.subtitle--technology {
+		margin-left: 3rem;
+	}
+
+	.right {
+		&--technology {
+			position: relative;
+			width: 100%;
+			height: 80vh;
+			background-image: url('/dist/img/rockets/launch.webp');
+			background-size: cover;
+			background-position: bottom;
+			background-repeat: no-repeat;
+			margin-top: 0 !important;
+
+			.rocketImg {
+				display: none;
+			}
+		}
+	}
+	.left {
+		&--technology {
+			order: -1;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			margin-right: 0;
+		}
+	}
+	.slider-container {
+		order: 0;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin-right: 0;
+
+		.dot {
+			margin: 0 20px;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.slider-container {
+		margin-top: 3rem;
+		.dot {
+			width: 40px;
+			height: 40px;
+			font-size: 24px !important;
+		}
+	}
+
+	.subtitle--technology{
+		margin-left: 0;
+	}
+
+	.left {
+		&--technology {
+			padding: 0 5%;
+			margin-top: 3rem;
+		}
+	}
+
+	.right--technology{
+		height: 40vh;
+	}
+
+	.nav-link {
+		&--technology {
+			font-size: 14px;
+		}
+	}
+
+	.subtitle--h3--technology{
+		font-size: 24px !important;
+	}
+
+	.text--technology{
+		font-size: 15px !important;
+	}
+}

@@ -2,6 +2,7 @@
 @use 'landingPage';
 @use 'destination';
 @use 'crew';
+@use 'technology';
 @use 'animations';
 
 :root {
@@ -65,6 +66,11 @@ body {
 		opacity: 0.5;
 		text-transform: uppercase;
 	}
+	&--h4--clean {
+		font-size: 32px;
+		text-transform: uppercase;
+	}
+
 	&--h5 {
 		font-family: 'Barlow Condensed', sans-serif;
 		font-weight: 400;
