@@ -2,16 +2,18 @@ const hamburgerMenu = document.querySelector('.hamburger')
 const navBar = document.querySelector('#navbar')
 const navItems = navBar.querySelectorAll('.nav-item')
 const allSections = document.querySelectorAll('.section')
+const logo = document.querySelector('.logoContainer')
+const circle = document.querySelector('.circle')
 
 function setBackgroundHeight() {
 	const activeSection = document.querySelector('.section--active')
 	const shadow = activeSection.querySelector('.shadow')
 	const wrapper = activeSection.querySelector('.wrapper')
 
-	const height = wrapper.clientHeight 
+	const height = wrapper.clientHeight
 
 	if (window.innerWidth < 768) {
-		shadow.style.height = `${height +150}px`
+		shadow.style.height = `${height + 150}px`
 	}
 }
 
@@ -29,11 +31,33 @@ navItems.forEach(item => {
 		allSections.forEach(section => {
 			section.classList.remove('section--active')
 			if (section.getAttribute('id') === id) {
-				section.classList.add('section--active')	
+				section.classList.add('section--active')
 				setBackgroundHeight()
 			}
 		})
 	})
+})
+
+logo.addEventListener('click', () => {
+	navItems.forEach(item => {
+		item.classList.remove('nav-item--active')
+	})
+	allSections.forEach(section => {
+		section.classList.remove('section--active')
+	})
+	allSections[0].classList.add('section--active')
+	navItems[0].classList.add('nav-item--active')
+})
+
+circle.addEventListener('click', () => {
+	navItems.forEach(item => {
+		item.classList.remove('nav-item--active')
+	})
+	allSections.forEach(section => {
+		section.classList.remove('section--active')
+	})
+	allSections[1].classList.add('section--active')
+	navItems[1].classList.add('nav-item--active')
 })
 
 window.addEventListener('resize', setBackgroundHeight)
