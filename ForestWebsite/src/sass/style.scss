@@ -1,3 +1,23 @@
+@use 'nav';
+@use 'header';
+@use 'about';
+@use 'offer';
+@use 'footer';
+
+:root {
+	--primary-color: #0b0d17;
+	--text-color: #ffffff;
+	--background-color: #fff;
+}
+
 * {
-	background-color: #333;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--text-color);
+	font-family: 'Roboto', sans-serif;
 }
