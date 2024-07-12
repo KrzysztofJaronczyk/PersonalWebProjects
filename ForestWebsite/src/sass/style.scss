@@ -8,8 +8,14 @@
 	--primary-color: #0b0d17;
 	--text-color: #ffffff;
 	--background-color: #fff;
+	--hover-color: #414141;
 }
-
+.dark-mode {
+    --primary-color: #ffffff;
+    --text-color: #0b0d17;
+    --background-color: #0b0d17;
+	--hover-color: #ffffff;
+}
 * {
 	margin: 0;
 	padding: 0;
