@@ -2,49 +2,113 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding: 2rem 2rem;
-	background-color: var(--primary-color);
-	color: var(--text-color);
-	.nav__logo_container {
-		display: flex;
-		align-items: center;
-		.nav__logo {
-			position: relative;
-			display: flex;
-			font-size: 3rem;
-			font-weight: 300;
-			color: var(--text-color);
-			text-decoration: none;
-            padding: 0.5rem 1rem;
+	background-color: var(--background-color);
+	color: var(--primary-color);
+	height: 100%;
+}
 
-			svg {
-                display: flex;
-				width: 2.6rem;
-				height: 2.6rem;
-				margin-right: 0.5rem;
-				fill: var(--text-color);
-                align-self: center;
-			}
-		}
+.nav__logo_container {
+	display: flex;
+	align-items: center;
+}
+
+.nav__logo {
+	position: relative;
+	display: flex;
+	font-size: 3rem;
+	font-weight: 300;
+	color: var(--primary-color);
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+}
+
+.nav__logo svg {
+	display: flex;
+	width: 2.6rem;
+	height: 2.6rem;
+	margin-right: 0.5rem;
+	fill: #414141;
+	align-self: center;
+}
+
+.nav__menu {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav__menu-item {
+	list-style: none;
+}
+
+.nav__menu-link {
+	text-decoration: none;
+	color: var(--dark-text-color);
+	font-size: 1.2rem;
+	font-weight: 300;
+	padding: 2rem 2.5rem;
+	display: block;
+	transition: color 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.nav__menu-link:hover {
+	color: var(--text-color);
+	background-color: #414141;
+	opacity: 0.8;
+}
+
+.active {
+	color: var(--text-color);
+	background-color: var(--primary-color);
+}
+
+.hamburger-menu {
+	display: none;
+	cursor: pointer;
+	padding: 1rem 1rem;
+	outline: none;
+	border-radius: 8px;
+    background-color: transparent;
+    border: none;
+	&:focus,
+	:active {
+		border: 2px solid var(--primary-color);
+	}
+}
+
+.hamburger-menu__line {
+	width: 2rem;
+	height: 0.25rem;
+	background-color: var(--primary-color);
+	margin: 0.3rem;
+}
+
+@media (max-width: 768px) {
+	.nav {
+		justify-content: space-between;
 	}
 	.nav__menu {
+		display: none;
+	}
+	.nav__menu.active {
 		display: flex;
-		justify-content: center;
-		align-items: center;
-		.nav__menu-item {
-			list-style: none;
-			margin-left: 2rem;
-			.nav__menu-link {
-				text-decoration: none;
-				color: var(--dark-text-color);
-				font-size: 1rem;
-				font-weight: 500;
-				padding: 0.5rem 1rem;
+		flex-direction: column;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background-color: var(--background-color);
+	}
+	.nav__menu-item {
+		width: 100%;
+	}
+	.nav__menu-link {
+		padding: 1.5rem 0;
+		text-align: center;
+	}
 
-				&:hover {
-					color: var(--text-color);
-				}
-			}
-		}
+	.hamburger-menu {
+		display: block;
 	}
 }
