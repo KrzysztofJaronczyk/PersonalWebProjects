@@ -3,6 +3,7 @@
 @use 'about';
 @use 'offer';
 @use 'footer';
+@use 'animations';
 
 :root {
 	--primary-color: #0b0d17;
@@ -11,9 +12,9 @@
 	--hover-color: #414141;
 }
 .dark-mode {
-    --primary-color: #ffffff;
-    --text-color: #0b0d17;
-    --background-color: #0b0d17;
+	--primary-color: #ffffff;
+	--text-color: #0b0d17;
+	--background-color: #0b0d17;
 	--hover-color: #ffffff;
 }
 * {
@@ -31,4 +32,21 @@ body {
 ::selection {
 	background-color: var(--primary-color);
 	color: var(--text-color);
+}
+
+.wrapper{
+    margin: 0 15%;
+    max-width: 1400px;
+}
+
+@media (max-width: 1024px) {
+	.wrapper {
+		margin: 0 3%;
+	}
+}
+
+@media (max-width: 768px) {
+	.wrapper {
+		margin: 0 20px;
+	}
 }
