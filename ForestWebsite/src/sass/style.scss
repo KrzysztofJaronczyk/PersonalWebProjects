@@ -1,6 +1,7 @@
 @use 'nav';
 @use 'header';
 @use 'about';
+@use 'baner';
 @use 'offer';
 @use 'footer';
 @use 'animations';
@@ -34,13 +35,17 @@ body {
 	color: var(--text-color);
 }
 
-section{
+section {
 	padding-bottom: 5rem;
 }
 
 .wrapper {
 	margin: 0 15%;
 	max-width: 1400px;
+	&__small {
+		margin: 0 20%;
+		max-width: 1400px;
+	}
 }
 
 .padd-5 {
@@ -50,14 +55,26 @@ section{
 @media (max-width: 1024px) {
 	.wrapper {
 		margin: 0 3%;
+		&__small {
+			margin: 0 5%;
+		}
+	}
+	section {
+		padding-bottom: 3rem;
 	}
 }
 
 @media (max-width: 768px) {
 	.wrapper {
 		margin: 0 20px;
+		&__small {
+			margin: 0 20px;
+		}
 	}
-	.padd-5{
+	.padd-5 {
 		padding-top: 2rem;
+	}
+	section {
+		padding-bottom: 1rem;
 	}
 }
