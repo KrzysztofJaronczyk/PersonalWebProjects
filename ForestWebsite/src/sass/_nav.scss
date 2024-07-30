@@ -21,7 +21,11 @@
 		color: var(--primary-color);
 		text-decoration: none;
 
-		svg {
+		&--big {
+			font-size: 4rem;
+		}
+
+		.svg {
 			display: flex;
 			width: 2.6rem;
 			height: 2.6rem;
@@ -29,9 +33,14 @@
 			fill: var(--hover-color);
 			align-self: center;
 			transition: transform 0.5s ease-in-out;
+
+			&--big{
+				width: 3.6rem;
+				height: 3.6rem;
+			}
 		}
 
-		&:hover svg {
+		&:hover .svg {
 			transform: rotateY(360deg);
 		}
 	}
