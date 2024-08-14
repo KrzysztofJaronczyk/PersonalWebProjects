@@ -1,10 +1,24 @@
+.navigation {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background-color: var(--background-color);
+	z-index: 1000;
+}
+
 .nav {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	background-color: var(--background-color);
 	color: var(--primary-color);
-	height: 100%;
 
 	// border-bottom: 1px solid var(--primary-color);
 
@@ -34,7 +48,7 @@
 			align-self: center;
 			transition: transform 0.5s ease-in-out;
 
-			&--big{
+			&--big {
 				width: 3.6rem;
 				height: 3.6rem;
 			}
@@ -53,6 +67,17 @@
 
 		&-item {
 			list-style: none;
+			height: 100px;
+			//target child
+
+			a {
+				align-content: center;
+			}
+
+			&.active {
+				color: var(--text-color);
+				background-color: var(--primary-color);
+			}
 		}
 
 		&-link {
@@ -63,6 +88,7 @@
 			padding: 2rem 2.5rem;
 			display: block;
 			transition: color 0.3s ease-in-out, background-color 0.3s ease;
+			height: 100%;
 
 			&:hover {
 				color: var(--text-color);
@@ -70,11 +96,6 @@
 				opacity: 0.8;
 			}
 		}
-	}
-
-	&__menu-link.active {
-		color: var(--text-color);
-		background-color: var(--primary-color);
 	}
 
 	.hamburger-menu {
@@ -89,7 +110,7 @@
 
 		&:focus,
 		&:active {
-			border: 2px solid var(--primary-color);
+			border: 2px solid #ffffff;
 		}
 
 		&__line {
@@ -97,6 +118,9 @@
 			height: 0.25rem;
 			background-color: var(--primary-color);
 			margin: 0.3rem;
+			&--active {
+				background-color: #ffffff !important;
+			}
 		}
 	}
 
@@ -130,11 +154,16 @@
 			&-item {
 				width: 100%;
 				height: auto;
+
+				&.active {
+					background-color: #169873;
+				}
 			}
 
 			&-link {
 				width: auto;
 				text-align: left;
+				color: #ffffff;
 			}
 		}
 
@@ -143,7 +172,6 @@
 		}
 	}
 	@media (max-width: 500px) {
-		margin: 20px !important;
 		&__logo {
 			font-size: 2.5rem;
 		}
