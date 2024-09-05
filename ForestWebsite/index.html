@@ -2,196 +2,199 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Forest - twój ulubiony park</title>
-	<link rel="icon" type="image/png" sizes="32x32" href="/dist/img/tree.svg">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-		rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./dist/css/style.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest - twój ulubiony park</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/dist/img/tree.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/style.min.css">
 </head>
 
 <body id="home">
-	<div class="navigation">
-   <div class="wrapper">
-      <nav class="nav">
-         <div class="nav__logo_container">
-            <a class="nav__logo" href="/">
-               <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                  <path
-                     d="M210.6 5.9L62 169.4c-3.9 4.2-6 9.8-6 15.5C56 197.7 66.3 208 79.1 208H104L30.6 281.4c-4.2 4.2-6.6 10-6.6 16C24 309.9 34.1 320 46.6 320H80L5.4 409.5C1.9 413.7 0 419 0 424.5c0 13 10.5 23.5 23.5 23.5H192v32c0 17.7 14.3 32 32 32s32-14.3 32-32V448H424.5c13 0 23.5-10.5 23.5-23.5c0-5.5-1.9-10.8-5.4-15L368 320h33.4c12.5 0 22.6-10.1 22.6-22.6c0-6-2.4-11.8-6.6-16L344 208h24.9c12.7 0 23.1-10.3 23.1-23.1c0-5.7-2.1-11.3-6-15.5L237.4 5.9C234 2.1 229.1 0 224 0s-10 2.1-13.4 5.9z" />
-               </svg>
-               Forest
-            </a>
-         </div>
+    <div class="navigation">
+        <div class="wrapper">
+            <nav class="nav">
+                <div class="nav__logo_container">
+                    <a class="nav__logo" href="/">
+                        <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M210.6 5.9L62 169.4c-3.9 4.2-6 9.8-6 15.5C56 197.7 66.3 208 79.1 208H104L30.6 281.4c-4.2 4.2-6.6 10-6.6 16C24 309.9 34.1 320 46.6 320H80L5.4 409.5C1.9 413.7 0 419 0 424.5c0 13 10.5 23.5 23.5 23.5H192v32c0 17.7 14.3 32 32 32s32-14.3 32-32V448H424.5c13 0 23.5-10.5 23.5-23.5c0-5.5-1.9-10.8-5.4-15L368 320h33.4c12.5 0 22.6-10.1 22.6-22.6c0-6-2.4-11.8-6.6-16L344 208h24.9c12.7 0 23.1-10.3 23.1-23.1c0-5.7-2.1-11.3-6-15.5L237.4 5.9C234 2.1 229.1 0 224 0s-10 2.1-13.4 5.9z" />
+                        </svg>
+                        Forest
+                    </a>
+                </div>
 
-         <ul class="nav__menu" id="navbar">
-            <li class="nav__menu-item"><a href="/#home" class="nav__menu-link">Home</a></li>
-            <li class="nav__menu-item"><a href="/#aboutus" class="nav__menu-link">O nas</a></li>
-            <li class="nav__menu-item"><a href="/#offer" class="nav__menu-link">Oferta</a></li>
-            <li class="nav__menu-item"><a href="/contactPage.html" class="nav__menu-link">Kontakt</a></li>
-         </ul>
+                <ul class="nav__menu" id="navbar">
+                    <li class="nav__menu-item"><a href="/#home" class="nav__menu-link">Home</a></li>
+                    <li class="nav__menu-item"><a href="/#aboutus" class="nav__menu-link">O nas</a></li>
+                    <li class="nav__menu-item"><a href="/#offer" class="nav__menu-link">Oferta</a></li>
+                    <li class="nav__menu-item"><a href="/contactPage.html" class="nav__menu-link">Kontakt</a></li>
+                </ul>
 
-         <button class="hamburger-menu" type="button">
-            <div class="hamburger-menu__line"></div>
-            <div class="hamburger-menu__line"></div>
-            <div class="hamburger-menu__line"></div>
-         </button>
-      </nav>
-   </div>
-</div>
-	<button id="theme-toggle" style="position: fixed;">Toggle Dark Mode</button>
-<header class="image-container">
-    <div class="hero-img kenburns-top"> </div>
-    <div class="text-container wrapper">
-        <span class="hero-text">Forest Group</span>
-        <h1 class="hero-title">Najpiękniejszy park w Twojej okolicy!</h1>
-    </div>
-</header>
-
-	<main>
-		<section class="wrapper padd-5" id="aboutus">
-    <h2 class="section-title">O nas</h2>
-    <div class="section-container">
-        <div class="left">
-            <img src="/dist/img/water-small.webp" alt="Forest Company" class="about-img">
-        </div>
-        <div class="right">
-            <h3 class="about-title">Niezapomniane przygody</h3>
-            <p class="about-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit voluptate beatae
-                similique atque quam explicabo dolorem nihil! Facilis pariatur repellendus minus, quisquam ducimus harum
-                neque iste voluptatum hic minima libero repudiandae quam, quibusdam ea impedit maxime numquam aut enim
-                dolores obcaecati illo commodi? Saepe repellat velit quas in officiis? Quam.</p>
+                <button class="hamburger-menu" type="button">
+                    <div class="hamburger-menu__line"></div>
+                    <div class="hamburger-menu__line"></div>
+                    <div class="hamburger-menu__line"></div>
+                </button>
+            </nav>
         </div>
     </div>
-</section>
-		<section class="banerBackground">
-    <div class="baner-shadow"></div>
-    <div class="baner-box wrapper__small">
-        <h2 class="baner-title">
-            Przygoda dla całej rodziny
-        </h2>
-    </div>
-</section>
-		<section class="wrapper__small padd-5" id="offer">
-    <h2 class="section-title">Oferta</h2>
-    <h4 class="section-desc">Wybierz jedną z naszych wspaniałych ofert! </h4>
-    <div class="cards-container">
-        <div class="card">
-            <div class="card__title">Demo</div>
-            <div class="card__price"><span>$</span>0</div>
-            <div class="card__text">
-                <p class="card__text__item">
-                    <img src="dist/img/check.svg" alt="Check icon" class="icon" /> opcja w pakiecie
-                </p>
-                <p class="card__text__item">
-                    <img src="dist/img/check.svg" alt="Check icon" class="icon" /> opcja w pakiecie
-                </p>
-                <p class="card__text__item card__text__item--disabled">
-                    <img src="dist/img/minus.svg" alt="Check icon" class="icon" /> opcja poza pakietem
-                </p>
-                <p class="card__text__item card__text__item--disabled">
-                    <img src="dist/img/minus.svg" alt="Check icon" class="icon" /> opcja poza pakietem
-                </p>
-                <p class="card__text__item card__text__item--disabled">
-                    <img src="dist/img/minus.svg" alt="Check icon" class="icon" /> opcja poza pakietem
-                </p>
-            </div>
-            <button class="card__btn">Wybierz</button>
+    <!-- <button id="theme-toggle" style="position: fixed;">Toggle Dark Mode</button> -->
+    <header class="image-container">
+        <div class="hero-img kenburns-top"> </div>
+        <div class="text-container wrapper">
+            <span class="hero-text">Forest Group</span>
+            <h1 class="hero-title">Najpiękniejszy park w Twojej okolicy!</h1>
+        </div>
+    </header>
 
-        </div>
-        <div class="card">
-            <div class="card__title">Standard</div>
-            <div class="card__price"><span>$</span>99</div>
-            <div class="card__text">
-                <p class="card__text__item">
-                    <img src="dist/img/check.svg" alt="Check icon" class="icon" /> opcja w pakiecie
-                </p>
-                <p class="card__text__item">
-                    <img src="dist/img/check.svg" alt="Check icon" class="icon" /> opcja w pakiecie
-                </p>
-                <p class="card__text__item">
-                    <img src="dist/img/check.svg" alt="Check icon" class="icon" /> opcja w pakiecie
-                </p>
-                <p class="card__text__item card__text__item--disabled">
-                    <img src="dist/img/minus.svg" alt="Check icon" class="icon" /> opcja poza pakietem
-                </p>
-                <p class="card__text__item card__text__item--disabled">
-                    <img src="dist/img/minus.svg" alt="Check icon" class="icon" /> opcja poza pakietem
-                </p>
+    <main>
+        <section class="wrapper padd-5" id="aboutus">
+            <h2 class="section-title">O nas</h2>
+            <div class="section-container">
+                <div class="left">
+                    <img src="/dist/img/water-small.webp" alt="Forest Company" class="about-img">
+                </div>
+                <div class="right">
+                    <h3 class="about-title">Niezapomniane przygody</h3>
+                    <p class="about-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit voluptate
+                        beatae
+                        similique atque quam explicabo dolorem nihil! Facilis pariatur repellendus minus, quisquam
+                        ducimus harum
+                        neque iste voluptatum hic minima libero repudiandae quam, quibusdam ea impedit maxime numquam
+                        aut enim
+                        dolores obcaecati illo commodi? Saepe repellat velit quas in officiis? Quam.</p>
+                </div>
             </div>
-            <button class="card__btn card__btn--active">Wybierz</button>
-        </div>
-        <div class="card">
-            <div class="card__title">Premium</div>
-            <div class="card__price"><span>$</span>299</div>
-            <div class="card__text">
-                <p class="card__text__item">
-                    <img src="dist/img/check.svg" alt="Check icon" class="icon" /> opcja w pakiecie
-                </p>
-                <p class="card__text__item">
-                    <img src="dist/img/check.svg" alt="Check icon" class="icon" /> opcja w pakiecie
-                </p>
-                <p class="card__text__item">
-                    <img src="dist/img/check.svg" alt="Check icon" class="icon" /> opcja w pakiecie
-                </p>
-                <p class="card__text__item">
-                    <img src="dist/img/check.svg" alt="Check icon" class="icon" /> opcja w pakiecie
-                </p>
-                <p class="card__text__item">
-                    <img src="dist/img/check.svg" alt="Check icon" class="icon" /> opcja w pakiecie
-                </p>
+        </section>
+        <section class="banerBackground">
+            <div class="baner-shadow"></div>
+            <div class="baner-box wrapper__small">
+                <h2 class="baner-title">
+                    Przygoda dla całej rodziny
+                </h2>
             </div>
-            <button class="card__btn">Wybierz</button>
-        </div>
-    </div>
-    <h4 class="section-desc padd-5">Zobacz też naszą pełną ofertę </h4>
-    <a href="/offerPage.html" class="offer__btn">Pełna oferta</a>
+        </section>
+        <section class="wrapper__small padd-5" id="offer">
+            <h2 class="section-title">Oferta</h2>
+            <h4 class="section-desc">Wybierz jedną z naszych wspaniałych ofert! </h4>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card__title">Demo</div>
+                    <div class="card__price"><span>$</span>0</div>
+                    <div class="card__text">
+                        <p class="card__text__item">
+                            <img src="dist/img/check.svg" alt="Check icon" class="icon" /> opcja w pakiecie
+                        </p>
+                        <p class="card__text__item">
+                            <img src="dist/img/check.svg" alt="Check icon" class="icon" /> opcja w pakiecie
+                        </p>
+                        <p class="card__text__item card__text__item--disabled">
+                            <img src="dist/img/minus.svg" alt="Check icon" class="icon" /> opcja poza pakietem
+                        </p>
+                        <p class="card__text__item card__text__item--disabled">
+                            <img src="dist/img/minus.svg" alt="Check icon" class="icon" /> opcja poza pakietem
+                        </p>
+                        <p class="card__text__item card__text__item--disabled">
+                            <img src="dist/img/minus.svg" alt="Check icon" class="icon" /> opcja poza pakietem
+                        </p>
+                    </div>
+                    <button class="card__btn">Wybierz</button>
 
-</section>
-	</main>
-	<footer class="footer  padd-5">
-   <div class="wrapper__small">
-      <div class="container">
-         <div class="footer__content">
-            <div class="footer__left">
-               <div class="nav__logo nav__logo--big">
-                  <svg class="svg svg--big" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                     <path
-                        d="M210.6 5.9L62 169.4c-3.9 4.2-6 9.8-6 15.5C56 197.7 66.3 208 79.1 208H104L30.6 281.4c-4.2 4.2-6.6 10-6.6 16C24 309.9 34.1 320 46.6 320H80L5.4 409.5C1.9 413.7 0 419 0 424.5c0 13 10.5 23.5 23.5 23.5H192v32c0 17.7 14.3 32 32 32s32-14.3 32-32V448H424.5c13 0 23.5-10.5 23.5-23.5c0-5.5-1.9-10.8-5.4-15L368 320h33.4c12.5 0 22.6-10.1 22.6-22.6c0-6-2.4-11.8-6.6-16L344 208h24.9c12.7 0 23.1-10.3 23.1-23.1c0-5.7-2.1-11.3-6-15.5L237.4 5.9C234 2.1 229.1 0 224 0s-10 2.1-13.4 5.9z" />
-                  </svg>Forest
-               </div>
+                </div>
+                <div class="card">
+                    <div class="card__title">Standard</div>
+                    <div class="card__price"><span>$</span>99</div>
+                    <div class="card__text">
+                        <p class="card__text__item">
+                            <img src="dist/img/check.svg" alt="Check icon" class="icon" /> opcja w pakiecie
+                        </p>
+                        <p class="card__text__item">
+                            <img src="dist/img/check.svg" alt="Check icon" class="icon" /> opcja w pakiecie
+                        </p>
+                        <p class="card__text__item">
+                            <img src="dist/img/check.svg" alt="Check icon" class="icon" /> opcja w pakiecie
+                        </p>
+                        <p class="card__text__item card__text__item--disabled">
+                            <img src="dist/img/minus.svg" alt="Check icon" class="icon" /> opcja poza pakietem
+                        </p>
+                        <p class="card__text__item card__text__item--disabled">
+                            <img src="dist/img/minus.svg" alt="Check icon" class="icon" /> opcja poza pakietem
+                        </p>
+                    </div>
+                    <button class="card__btn card__btn--active">Wybierz</button>
+                </div>
+                <div class="card">
+                    <div class="card__title">Premium</div>
+                    <div class="card__price"><span>$</span>299</div>
+                    <div class="card__text">
+                        <p class="card__text__item">
+                            <img src="dist/img/check.svg" alt="Check icon" class="icon" /> opcja w pakiecie
+                        </p>
+                        <p class="card__text__item">
+                            <img src="dist/img/check.svg" alt="Check icon" class="icon" /> opcja w pakiecie
+                        </p>
+                        <p class="card__text__item">
+                            <img src="dist/img/check.svg" alt="Check icon" class="icon" /> opcja w pakiecie
+                        </p>
+                        <p class="card__text__item">
+                            <img src="dist/img/check.svg" alt="Check icon" class="icon" /> opcja w pakiecie
+                        </p>
+                        <p class="card__text__item">
+                            <img src="dist/img/check.svg" alt="Check icon" class="icon" /> opcja w pakiecie
+                        </p>
+                    </div>
+                    <button class="card__btn">Wybierz</button>
+                </div>
             </div>
-            <div class="footer__right">
-               <div class="footer__about_us">
-                  <h3 class="footer__about_us__title">O nas</h3>
-                  <a class="footer__about_us__item" href="#">Historia</a>
-                  <a class="footer__about_us__item" href="#">Parki</a>
-                  <a class="footer__about_us__item" href="#">Opinie</a>
-               </div>
-               <div class="footer__about_us">
-                  <h3 class="footer__about_us__title">Nasza firma</h3>
-                  <a class="footer__about_us__item" href="#">Praca</a>
-                  <a class="footer__about_us__item" href="#">Kadry</a>
-                  <a class="footer__about_us__item" href="#">Zarząd</a>
-               </div>
-               <div class="footer__about_us">
-                  <h3 class="footer__about_us__title">Dokumenty</h3>
-                  <a class="footer__about_us__item" href="#">Wnioski</a>
-                  <a class="footer__about_us__item" href="#">Rezerwacje</a>
-               </div>
+            <h4 class="section-desc padd-5">Zobacz też naszą pełną ofertę </h4>
+            <a href="/offerPage.html" class="offer__btn">Pełna oferta</a>
+
+        </section>
+    </main>
+    <footer class="footer  padd-5">
+        <div class="wrapper__small">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__left">
+                        <div class="nav__logo nav__logo--big">
+                            <svg class="svg svg--big" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M210.6 5.9L62 169.4c-3.9 4.2-6 9.8-6 15.5C56 197.7 66.3 208 79.1 208H104L30.6 281.4c-4.2 4.2-6.6 10-6.6 16C24 309.9 34.1 320 46.6 320H80L5.4 409.5C1.9 413.7 0 419 0 424.5c0 13 10.5 23.5 23.5 23.5H192v32c0 17.7 14.3 32 32 32s32-14.3 32-32V448H424.5c13 0 23.5-10.5 23.5-23.5c0-5.5-1.9-10.8-5.4-15L368 320h33.4c12.5 0 22.6-10.1 22.6-22.6c0-6-2.4-11.8-6.6-16L344 208h24.9c12.7 0 23.1-10.3 23.1-23.1c0-5.7-2.1-11.3-6-15.5L237.4 5.9C234 2.1 229.1 0 224 0s-10 2.1-13.4 5.9z" />
+                            </svg>Forest
+                        </div>
+                    </div>
+                    <div class="footer__right">
+                        <div class="footer__about_us">
+                            <h3 class="footer__about_us__title">O nas</h3>
+                            <a class="footer__about_us__item" href="#">Historia</a>
+                            <a class="footer__about_us__item" href="#">Parki</a>
+                            <a class="footer__about_us__item" href="#">Opinie</a>
+                        </div>
+                        <div class="footer__about_us">
+                            <h3 class="footer__about_us__title">Nasza firma</h3>
+                            <a class="footer__about_us__item" href="#">Praca</a>
+                            <a class="footer__about_us__item" href="#">Kadry</a>
+                            <a class="footer__about_us__item" href="#">Zarząd</a>
+                        </div>
+                        <div class="footer__about_us">
+                            <h3 class="footer__about_us__title">Dokumenty</h3>
+                            <a class="footer__about_us__item" href="#">Wnioski</a>
+                            <a class="footer__about_us__item" href="#">Rezerwacje</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-   </div>
-   <div class="footer__copy">
-      <!-- set in js -->
-      <p class="footer__copy__paragraph"></p>
-   </div>
-</footer>
+        </div>
+        <div class="footer__copy">
+            <!-- set in js -->
+            <p class="footer__copy__paragraph"></p>
+        </div>
+    </footer>
 
 </body>
 <script src="./dist/js/navbar.min.js"></script>
